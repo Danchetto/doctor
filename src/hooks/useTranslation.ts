@@ -1,24 +1,23 @@
+import { usePathname } from 'next/navigation';
 import ru from '../../public/locales/ru/common.json';
 import es from '../../public/locales/es/common.json';
-import {usePathname} from "next/navigation";
 
 const LOCALES = {
-    ru,
-    es,
+  ru,
+  es,
 };
 
-export const useTranslation =  (locale?: keyof typeof LOCALES) => {
-    const pathname = usePathname();
+// eslint-disable-next-line import/prefer-default-export
+export const useTranslation = (locale?: keyof typeof LOCALES) => {
+  const pathname = usePathname();
 
-    const urlLocale = pathname.match(new RegExp('^\/(' + Object.keys(LOCALES).join('|') + ')'))?.[1] as keyof typeof LOCALES | undefined;
+  const urlLocale = pathname.match(new RegExp(`^/(${Object.keys(LOCALES).join('|')})`))?.[1] as keyof typeof LOCALES | undefined;
 
-    const data: Record<string, any> = LOCALES[locale || urlLocale || 'ru'];
+  const data: Record<string, any> = LOCALES[locale || urlLocale || 'ru'];
 
-    const t = (name: string) => {
-        return data[name] || name;
-    };
+  const t = (name: string) => data[name] || name;
 
-    return {
-        t
-    };
-}
+  return {
+    t,
+  };
+};

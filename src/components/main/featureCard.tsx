@@ -3,7 +3,7 @@ import React, { PropsWithChildren } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
 import useIsMobileScreen from '@/hooks/useIsMobileScreen';
-import CheckIcon from "@/components/icons/checkIcon";
+import CheckIcon from '@/components/icons/checkIcon';
 
 interface Props {
     title: string;

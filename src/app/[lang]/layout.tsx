@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 // eslint-disable-next-line camelcase
-import { PT_Serif, Roboto, Philosopher, Prata } from 'next/font/google';
+import {
+  Roboto, Philosopher, Prata,
+} from 'next/font/google';
 import '../globals.css';
 import React from 'react';
 
