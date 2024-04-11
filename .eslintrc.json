@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "plugin:react/recommended", "airbnb"],
+  "rules": {
+    "import/extensions": 0,
+    "react/function-component-definition": 0,
+    "no-unused-vars": 1,
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/require-default-props": 0
+  }
 }
