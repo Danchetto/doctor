@@ -10,7 +10,7 @@ const About: React.FC = () => {
   const { t } = useTranslation();
   const { isMobile } = useIsMobileScreen();
   return (
-    <div className="flex flex-col lg:flex-row gap-16 lg:gap-32 items-center">
+    <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-32 items-center">
       <div>
         <h1 className="text-5xl font-bold mb-8">{t('name')}</h1>
         <div className="mb-2 text-xl underline underline-offset-4">{t('main_number')}</div>
