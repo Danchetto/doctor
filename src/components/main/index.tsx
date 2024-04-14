@@ -20,14 +20,13 @@ const Main: React.FC = () => {
       <div className="h-32 sm:h-[200px]" />
 
       <div className="relative flex flex-col lg:flex-row justify-center gap-16 sm:gap-32">
-        <div>
-          <FeatureCard title="Для врачей" features={doctorFeatures} src="/doctors" />
-        </div>
-
         <div className="h-auto">
           <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
         </div>
 
+        <div>
+          <FeatureCard title="Для врачей" features={doctorFeatures} src="/doctors" />
+        </div>
       </div>
 
       <div className="h-32 sm:h-[200px]" />
