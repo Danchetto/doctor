@@ -11,15 +11,15 @@ const Header: React.FC = () => {
   const menuItems = [
     {
       title: 'Обо мне',
-      link: '/about',
+      link: '/',
     },
     {
       title: 'Для врачей',
-      link: '/about',
+      link: '/doctors',
     },
     {
       title: 'Для пациентов',
-      link: '/about',
+      link: '/patients',
     },
   ];
 
@@ -32,11 +32,20 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed z-10 top-0 left-0 w-screen h-16 flex items-center bg-white" style={{ boxShadow: '0 -6px 10px 5px rgba(0,0,0,0.5)' }}>
-      <Image className="ml-6" src="/images/logo.png" alt="logo" width={80} height={50} />
-      {menuItems.map((item) => (
-        <div key={item.title} className="p-4 m-1 cursor-pointer rounded hover:bg-blue-50 transition-all duration-300 ease-out">{item.title}</div>
-      ))}
+    <header className="fixed sm:pr-20 z-10 top-0 left-0 w-screen h-16 flex items-center justify-center sm:justify-between bg-white" style={{ boxShadow: '0 8px 32px #1b498714' }}>
+      <Image className="mt-4" src="/images/logo.png" alt="logo" height={150} width={350} />
+      <div className="hidden sm:flex">
+        {menuItems.map((item) => (
+          <div
+            key={item.title}
+            className="p-4 m-1 cursor-pointer rounded hover:bg-blue-50 transition-all duration-300 ease-out"
+            onClick={() => { router.push(item.link); }}
+          >
+            {item.title}
+          </div>
+        ))}
+      </div>
+
     </header>
   );
 };

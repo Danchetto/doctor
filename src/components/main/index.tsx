@@ -16,19 +16,16 @@ const Main: React.FC = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-16 sm:pt-24">
-
-      <Image className="-z-10 blur-xl mt-[170px] opacity-40" src="/images/bg.jpg" fill alt="bg" />
-
       <About />
       <div className="h-32 sm:h-[200px]" />
 
-      <div className="relative flex flex-col sm:flex-row justify-center gap-16 sm:gap-32">
+      <div className="relative flex flex-col lg:flex-row justify-center gap-16 sm:gap-32">
         <div>
-          <FeatureCard title="Для врачей" features={doctorFeatures} />
+          <FeatureCard title="Для врачей" features={doctorFeatures} src="/doctors" />
         </div>
 
         <div className="h-auto">
-          <FeatureCard title="Для пациентов" features={patientsFeatures} />
+          <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
         </div>
 
       </div>

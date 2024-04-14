@@ -8,7 +8,8 @@ const Layout: React.FC<PropsWithChildren> = (props) => {
   return (
     <div className="flex flex-col">
       <Header />
-      <div className="mt-16 mb-20 grow">
+      <div className="mt-16 mb-20 grow relative">
+        <div className="absolute -z-10 w-full h-full top-0 left-0 bg-gradient" />
         {children}
       </div>
       <Footer />

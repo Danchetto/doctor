@@ -1,25 +1,29 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 
 import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
 import useIsMobileScreen from '@/hooks/useIsMobileScreen';
-import CheckIcon from '@/components/icons/checkIcon';
+import ArrowIcon from '@/components/icons/arrowIcon';
+import { useRouter } from 'next/navigation';
 
 interface Props {
     title: string;
     features: string[];
+    src?: string;
 }
 
-const FeatureCard: React.FC<Props> = ({ title, features }) => {
+const FeatureCard: React.FC<Props> = ({ title, features, src }) => {
   const { t } = useTranslation();
   const { isMobile } = useIsMobileScreen();
+  const router = useRouter();
   return (
     <div
-      className="w-full h-full sm:w-[500px] py-10 px-10 flex flex-col rounded-xl bg-white hover:box hover:transition-all hover:scale-[1] duration-500 ease-out"
-      style={{ boxShadow: 'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px' }}
+      className="w-full h-full sm:max-w-[500px] sm:min-w-[400px] py-10 px-10 flex flex-col rounded-3xl bg-white cursor-pointer transition-all hover:scale-[1.01] duration-700 ease-in-out"
+      style={{ boxShadow: '0 10.512px 42.048px #1b49871f' }}
+      onClick={src ? () => { router.push(src); } : undefined}
     >
-      <div className="text-3xl mb-10">{title}</div>
-      <div className="grow mb-10">
+      <div className="text-3xl mb-6 font-medium">{title}</div>
+      <div className="grow mb-6 ml-4">
         {features.map((item) => (
           <div key={item} className="flex items-center mb-4 last:mb-0">
             <Image className="mr-2" src="/images/check.png" alt="Check" width={25} height={25} />
@@ -27,8 +31,9 @@ const FeatureCard: React.FC<Props> = ({ title, features }) => {
           </div>
         ))}
       </div>
-      <div className="px-4 py-2 text-main font-bold m-auto border-main rounded-[30px] border-[1px] cursor-pointer w-fit">
+      <div className="px-4 py-2 flex items-center text-main font-medium m-auto cursor-pointer w-fit">
         Подробнее
+        <ArrowIcon />
       </div>
     </div>
   );
