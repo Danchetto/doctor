@@ -6,7 +6,7 @@ const WhatsappButton: React.FC = () => {
 
   return (
     <a aria-label="Chat on WhatsApp" href={url}>
-      <button className="rounded-xl">
+      <button className="rounded-xl h-[38px] w-[164px]">
         <Image src="/images/whatsapp.svg" alt="Whatsapp Logo" height={38} width={164} />
       </button>
     </a>

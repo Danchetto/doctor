@@ -33,7 +33,10 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed sm:pr-20 z-10 top-0 left-0 w-screen h-16 flex items-center justify-center sm:justify-between bg-white" style={{ boxShadow: '0 8px 32px #1b498714' }}>
-      <Image className="mt-4" src="/images/logo.png" alt="logo" height={150} width={350} />
+      <a href="/">
+        <Image className="mt-4" src="/images/logo.png" alt="logo" height={150} width={350} />
+      </a>
+
       <div className="hidden sm:flex">
         {menuItems.map((item) => (
           <div

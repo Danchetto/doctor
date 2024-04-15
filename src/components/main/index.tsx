@@ -17,9 +17,8 @@ const Main: React.FC = () => {
   return (
     <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-16 sm:pt-24">
       <About />
-      <div className="h-32 sm:h-[200px]" />
 
-      <div className="relative flex flex-col lg:flex-row justify-center gap-16 sm:gap-32">
+      <div className="relative w-full mt-[100px] lg:mt-[200px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32">
         <div className="h-auto">
           <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
         </div>
@@ -29,7 +28,7 @@ const Main: React.FC = () => {
         </div>
       </div>
 
-      <div className="h-32 sm:h-[200px]" />
+      <div className="h-[80px] sm:h-[200px]" />
 
       <Education />
 

@@ -47,14 +47,14 @@ const Education: React.FC = () => {
     <div className="w-full">
 
       <div className="w-full flex flex-col lg:flex-row items-center lg:items-start">
-        <div className="text-4xl mb-6 lg:pr-16 basis-1/2 text-right">Образование</div>
+        <div className="text-2xl lg:text-4xl mb-6 lg:pr-16 basis-1/2 text-right">Образование</div>
         <div className="basis-1/2">
           <Stages items={educationItems} />
         </div>
       </div>
 
       <div className="mt-20 w-full flex flex-col lg:flex-row items-center lg:items-start">
-        <div className="text-4xl mb-6 lg:pr-16 basis-1/2 text-right">Опыт работы</div>
+        <div className="text-2xl lg:text-4xl mb-6 lg:pr-16 basis-1/2 text-right">Опыт работы</div>
         <div className="basis-1/2">
           <Stages items={workItems} />
         </div>
