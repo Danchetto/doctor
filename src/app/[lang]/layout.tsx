@@ -1,19 +1,18 @@
 import type { Metadata } from 'next';
 // eslint-disable-next-line camelcase
 import {
-  Roboto, Philosopher, Prata, Red_Hat_Display, Scada,
+  Montserrat,
 } from 'next/font/google';
 import '../globals.css';
 import React from 'react';
 import Script from 'next/script';
+import Head from 'next/head';
 
-// const inter = Inter({ subsets: ["latin"] });
-// const font = PT_Serif({ subsets: ['latin', 'cyrillic'], weight: '400' });
-const font = Roboto({ subsets: ['latin', 'cyrillic'], weight: '300' });
+const font = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
   title: 'Dr. Petr Tuchin',
-  description: 'Врач',
+  description: 'Омологированный и коллегиированный врач в Испании',
 };
 
 export default function RootLayout({
@@ -23,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta property="og:image" content="/images/logo.png" />
+      </Head>
       <body className={font.className}>
         {children}
       </body>

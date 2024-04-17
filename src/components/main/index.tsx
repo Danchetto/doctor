@@ -15,10 +15,14 @@ const Main: React.FC = () => {
   const patientsFeatures = ['Запись на консультацию', 'Продлить  рецепт'];
 
   return (
-    <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-16 sm:pt-24">
+    <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-8 sm:pt-16">
       <About />
 
-      <div className="relative w-full mt-[100px] lg:mt-[200px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32">
+      <div className="h-[1px] bg-gray-300 w-[60%] mt-10 lg:mt-20" />
+
+      <div
+        className="relative w-full mt-[50px] lg:mt-[100px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32"
+      >
         <div className="h-auto">
           <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
         </div>
@@ -28,14 +32,9 @@ const Main: React.FC = () => {
         </div>
       </div>
 
-      <div className="h-[80px] sm:h-[200px]" />
+      <div className="h-[50px] sm:h-[150px]" />
 
       <Education />
-
-      {/* <div className="mb-10"> */}
-      {/*  /!* <a id="zl-url" className="zl-url" href="https://www.doctoralia.es/petr-tuchin/medico-general/valencia" rel="nofollow" data-zlw-doctor="petr-tuchin" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="false">Petr Tuchin - Doctoralia.es</a> *!/ */}
-      {/*  <div dangerouslySetInnerHTML={{ __html: '<a id="zl-url" class="zl-url" href="https://www.doctoralia.es/petr-tuchin/medico-general/valencia" rel="nofollow" data-zlw-doctor="petr-tuchin" data-zlw-type="big_with_calendar" data-zlw-opinion="false" data-zlw-hide-branding="true" data-zlw-saas-only="false">Petr Tuchin - Doctoralia.es</a><script>!function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","zl-widget-s");</script>' }} /> */}
-      {/* </div> */}
     </div>
   );
 };

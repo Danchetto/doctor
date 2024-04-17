@@ -11,16 +11,16 @@ const About: React.FC = () => {
   const { isMobile } = useIsMobileScreen();
   return (
     <div>
-      <div className="flex flex-row gap-2 lg:gap-32 lg:items-center">
+      <div className="flex flex-row gap-2 lg:gap-32 items-center justify-between w-full">
         <div>
-          <h1 className="text-3xl lg:text-5xl font-bold mb-8">{t('name')}</h1>
-          <div className="mb-2 lg:text-xl underline underline-offset-4">{t('main_number')}</div>
+          <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-8">{t('name')}</h1>
+          <div className="mb-1 lg:text-xl">{t('main_number')}</div>
           <div className="lg:text-xl sm:max-w-[400px]">{t('main_description')}</div>
         </div>
-        <div className="w-[100px] h-[100px] sm:w-[300px] sm:h-[300px] mt-4 sm:mt-0 relative min-w-[100px]">
+        <div className="w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] relative min-w-[100px]">
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] rounded-full"
-            src="/images/petr.jpg"
+            className="relative drop-shadow-[0_0_0rem_#00000070] rounded-full scale-125"
+            src="/images/petr2.png"
             alt="Logo"
             fill
             priority

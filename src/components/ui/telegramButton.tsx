@@ -20,7 +20,7 @@ const TelegramButton: React.FC = () => {
             />
           </svg>
         </span>
-        <span>Написать</span>
+        <span className="tracking-wide font-bold">Написать</span>
       </button>
     </a>
 
