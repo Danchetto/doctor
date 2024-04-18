@@ -35,18 +35,23 @@ const Patients: React.FC = () => {
               <li className="ml-6">сбор анамнеза, назначение лечения, рекомендации;</li>
               <li className="ml-6">оформление электронного рецепта / направления на анализы и исследования.</li>
             </ul>
-            <div className="mb-3">
+            <div className="mb-2">
               В случае острого состояния онлайн консультации не провожу. Для того, чтобы определить смогу ли я вам
               помочь онлайн, опишите
               {' '}
-              <span className="font-bold underline">кратко</span>
+              <span className="font-bold">кратко</span>
               {' '}
               вашу проблему.
+            </div>
+            <div className="mb-3">
+              Продолжительность -
+              {' '}
+              <b className="font-bold">30 минут</b>
             </div>
             <div>
               Стоимость -
               {' '}
-              <span className="font-bold underline">€50</span>
+              <span className="font-bold">€50</span>
             </div>
           </div>
         </div>
@@ -68,7 +73,7 @@ const Patients: React.FC = () => {
             <div>
               Стоимость -
               {' '}
-              <span className="font-bold underline">€20</span>
+              <span className="font-bold">€20</span>
             </div>
           </div>
         </div>

@@ -27,10 +27,20 @@ const About: React.FC = () => {
           />
         </div>
       </div>
+
       <div className="flex flex-wrap mt-6 gap-4">
         <TelegramButton />
-        <WhatsappButton />
+        {/* <WhatsappButton/> */}
       </div>
+
+      {/* <div className="w-full p-3 border-[1px] border-gray-300 mt-4"> */}
+      {/*  <div className="text-center font-medium">ЗАПИСЬ</div> */}
+      {/*  <div className="flex flex-wrap mt-2 gap-4"> */}
+      {/*    <TelegramButton /> */}
+      {/*    <WhatsappButton /> */}
+      {/*  </div> */}
+      {/* </div> */}
+
     </div>
   );
 };

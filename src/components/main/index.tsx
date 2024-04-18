@@ -1,8 +1,6 @@
 'use client';
 
-import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
-import { useRouter } from 'next/navigation';
 import About from '@/components/main/about';
 import Education from '@/components/main/education';
 import React from 'react';
@@ -10,8 +8,7 @@ import FeatureCard from '@/components/main/featureCard';
 
 // @ts-ignore
 const Main: React.FC = () => {
-  const { t } = useTranslation();
-  const doctorFeatures = ['Как стать врачом в Испании?', 'Запись на консультацию', 'Помощь в омологации диплома'];
+  const doctorFeatures = ['Как стать врачом в Испании', 'Запись на консультацию'];
   const patientsFeatures = ['Запись на консультацию', 'Продлить  рецепт'];
 
   return (

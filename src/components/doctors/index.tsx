@@ -32,21 +32,19 @@ const Doctors: React.FC = () => {
           <div className="mb-3">
             Продолжительность -
             {' '}
-            <b className="font-bold underline">1 год!</b>
-            {' '}
-            (после онлайн консультации в течение одного года Вы можете ко мне обращаться за помощью)
+            <b className="font-bold">60-90 минут</b>
           </div>
           <div>
             Стоимость -
             {' '}
-            <span className="font-bold underline">€50</span>
+            <span className="font-bold">€60</span>
           </div>
         </div>
       </div>
 
       <div className="w-full lg:w-3/4 mt-10 lg:mt-20">
         <div className="text-2xl lg:text-4xl mb-5 lg:mb-8 font-medium">
-          Как стать врачом в Испании?
+          Как стать врачом в Испании
         </div>
         <div>
           <ol className="ml-4">
