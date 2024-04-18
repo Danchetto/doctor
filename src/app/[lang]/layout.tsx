@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
 // eslint-disable-next-line camelcase
 import {
   Montserrat,
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={font.className}>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-FRV8ZHJ713" />
     </html>
   );
 }
