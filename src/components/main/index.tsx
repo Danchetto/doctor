@@ -17,8 +17,16 @@ const Main: React.FC = () => {
 
       <div className="h-[1px] bg-gray-300 w-[60%] mt-10 lg:mt-20" />
 
+      <div className="xl:w-[60%] mt-10 lg:mt-20 lg:text-xl">
+        Я - врач общей практики и занимаюсь диагностикой и лечением заболеваний дыхательных путей, сердца, желудочно-кишечного тракта и других органов и систем.
+
+        Оказываю первичную профессиональную помощь и даю рекомендации по лечению, направляю к узким специалистам при необходимости и
+        {' '}
+        <span className="font-bold">курирую ваше лечение на русском языке!</span>
+      </div>
+
       <div
-        className="relative w-full mt-[50px] lg:mt-[100px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32"
+        className="relative w-full mt-[80px] lg:mt-[100px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32"
       >
         <div className="h-auto">
           <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
