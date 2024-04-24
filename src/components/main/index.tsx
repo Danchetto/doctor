@@ -9,7 +9,7 @@ import FeatureCard from '@/components/main/featureCard';
 // @ts-ignore
 const Main: React.FC = () => {
   const doctorFeatures = ['Как стать врачом в Испании', 'Запись на консультацию'];
-  const patientsFeatures = ['Запись на консультацию', 'Продлить  рецепт'];
+  const patientsFeatures = ['В каких случаях необходима онлайн консультация?', 'Что входит в онлайн консультацию?'];
 
   return (
     <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-8 sm:pt-16">
@@ -28,11 +28,11 @@ const Main: React.FC = () => {
       <div
         className="relative w-full mt-[80px] lg:mt-[100px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32"
       >
-        <div className="h-auto">
+        <div className="h-auto lg:w-1/3">
           <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
         </div>
 
-        <div>
+        <div className="lg:w-1/3">
           <FeatureCard title="Для врачей" features={doctorFeatures} src="/doctors" />
         </div>
       </div>

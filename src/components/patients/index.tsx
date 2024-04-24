@@ -57,10 +57,10 @@ const Patients: React.FC = () => {
 
         <div className="w-full mt-10 lg:mt-20 lg:w-[1000px]">
           <div className="text-2xl lg:text-4xl mb-5 lg:mb-8 font-medium">
-            Запись на онлайн консультацию
+            В консультацию входит:
           </div>
           <div>
-            <div className="font-medium">В консультацию входит:</div>
+            {/* <div className="font-medium">В консультацию входит:</div> */}
             <ul className="list-disc mb-2 mt-2">
               <li className="ml-6">
                 видео звонок с врачом через защищенную платформу для медицинских телеконсультаций;
@@ -89,27 +89,27 @@ const Patients: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-[1000px] mt-10 lg:mt-20">
-          <div className="text-2xl lg:text-4xl mb-5 lg:mb-8 font-medium">
-            Продлить рецепт
-          </div>
-          <div>
-            <div className="mb-2">
-              Если у вас уже есть рецепт, выписанный в Испании по испанским правилам, и который нужно обновить, я могу
-              с
-              этим помочь.
-            </div>
-            <div className="mb-3">
-              Для этого опишите ситуацию и отправьте рецепт, в котором указаны имя фамилия, название препарата и
-              дозировка.
-            </div>
-            <div>
-              Стоимость -
-              {' '}
-              <span className="font-bold">€20</span>
-            </div>
-          </div>
-        </div>
+        {/* <div className="w-full lg:w-[1000px] mt-10 lg:mt-20"> */}
+        {/*  <div className="text-2xl lg:text-4xl mb-5 lg:mb-8 font-medium"> */}
+        {/*    Продлить рецепт */}
+        {/*  </div> */}
+        {/*  <div> */}
+        {/*    <div className="mb-2"> */}
+        {/*      Если у вас уже есть рецепт, выписанный в Испании по испанским правилам, и который нужно обновить, я могу */}
+        {/*      с */}
+        {/*      этим помочь. */}
+        {/*    </div> */}
+        {/*    <div className="mb-3"> */}
+        {/*      Для этого опишите ситуацию и отправьте рецепт, в котором указаны имя фамилия, название препарата и */}
+        {/*      дозировка. */}
+        {/*    </div> */}
+        {/*    <div> */}
+        {/*      Стоимость -*/}
+        {/*      {' '} */}
+        {/*      <span className="font-bold">€20</span> */}
+        {/*    </div> */}
+        {/*  </div> */}
+        {/* </div> */}
 
         <div className="mb-10 mt-10 lg:min-w-[300px]">
           {/* <div className="flex mt-6 mb-6 gap-4 lg:hidden"> */}
