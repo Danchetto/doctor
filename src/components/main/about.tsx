@@ -28,6 +28,15 @@ const About: React.FC = () => {
         </div>
       </div>
 
+      <div className="flex gap-2 mt-2 lg:mt-0">
+        <a href="https://t.me/drspain" target="_blank" rel="noreferrer">
+          <Image src="/images/telegram.png" alt="telegram" width={20} height={20} />
+        </a>
+        <a href="https://www.instagram.com/dr.petr.tuchin" target="_blank" rel="noreferrer">
+          <Image src="/images/instagram.png" alt="instagram" width={20} height={20} />
+        </a>
+      </div>
+
       <div className="flex flex-wrap mt-6 gap-4">
         <TelegramButton />
         {/* <WhatsappButton/> */}
