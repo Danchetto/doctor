@@ -37,18 +37,13 @@ const About: React.FC = () => {
         </a>
       </div>
 
-      <div className="flex flex-wrap mt-6 gap-4">
-        <TelegramButton />
-        {/* <WhatsappButton/> */}
+      <div className="w-full p-6 bg-white max-w-[375px] rounded-2xl border-gray-300 shadow-card mt-10 lg:mt-16">
+        <div className="text-center font-medium">Онлайн запись</div>
+        <div className="flex flex-wrap justify-center items-center mt-4 gap-2 lg:gap-4">
+          <TelegramButton />
+          <WhatsappButton />
+        </div>
       </div>
-
-      {/* <div className="w-full p-3 border-[1px] border-gray-300 mt-4"> */}
-      {/*  <div className="text-center font-medium">ЗАПИСЬ</div> */}
-      {/*  <div className="flex flex-wrap mt-2 gap-4"> */}
-      {/*    <TelegramButton /> */}
-      {/*    <WhatsappButton /> */}
-      {/*  </div> */}
-      {/* </div> */}
 
     </div>
   );

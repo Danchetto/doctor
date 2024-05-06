@@ -15,7 +15,7 @@ const Main: React.FC = () => {
     <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-8 sm:pt-16">
       <About />
 
-      <div className="h-[1px] bg-gray-300 w-[60%] mt-10 lg:mt-20" />
+      <div className="h-[1px] bg-gray-300 w-[100%] mt-10 lg:mt-20" />
 
       <div className="xl:w-[60%] mt-10 lg:mt-20 lg:text-xl text-justify">
         Я - врач общей практики и занимаюсь диагностикой и лечением заболеваний дыхательных путей, сердца, желудочно-кишечного тракта и других органов и систем.
