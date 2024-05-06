@@ -1,8 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 
 const WhatsappButton: React.FC = () => {
-  const url = 'https://wa.me/34641749828';
+  const url = 'https://wa.me/34624034206';
 
   return (
     <a href={url}>
