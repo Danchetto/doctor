@@ -22,24 +22,24 @@ const Education: React.FC = () => {
 
   const workItems = [
     {
-      title: 'Медицинский брат в ковидном отделении',
-      description: '2020',
-    },
-    {
-      title: 'Врач-терапевт Городская поликлиника №219',
-      description: '2020',
-    },
-    {
-      title: 'Преподаватель топографической анатомии Sechenov Universkill',
-      description: '2021',
+      title: 'Врач отделения ургентной медицины Hospital Recoletas Zamora, España',
+      description: '2024',
     },
     {
       title: 'Врач отдела согласований Best Doctor',
       description: '2023',
     },
     {
-      title: 'Врач отделения ургентной медицины Hospital Recoletas Zamora, España',
-      description: '2024',
+      title: 'Преподаватель топографической анатомии Sechenov Universkill',
+      description: '2021',
+    },
+    {
+      title: 'Врач-терапевт Городская поликлиника №219',
+      description: '2020',
+    },
+    {
+      title: 'Медицинский брат в ковидном отделении',
+      description: '2020',
     },
   ];
 
