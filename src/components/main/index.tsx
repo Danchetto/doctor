@@ -5,11 +5,21 @@ import About from '@/components/main/about';
 import Education from '@/components/main/education';
 import React from 'react';
 import FeatureCard from '@/components/main/featureCard';
+import YouTube from 'react-youtube';
 
 // @ts-ignore
 const Main: React.FC = () => {
   const doctorFeatures = ['Как стать врачом в Испании', 'Запись на консультацию'];
   const patientsFeatures = ['В каких случаях необходима онлайн консультация?', 'Что входит в онлайн консультацию?'];
+
+  const videoOpts = {
+    // height: '390',
+    // width: '640',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0,
+    },
+  };
 
   return (
     <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-8 sm:pt-16">
@@ -40,6 +50,12 @@ const Main: React.FC = () => {
       <div className="h-[50px] sm:h-[150px]" />
 
       <Education />
+
+      <div className="mt-10">
+        <YouTube className="mb-10" iframeClassName="w-[320px] h-[195px] sm:w-[448px] sm:h-[273px] lg:w-[640px] lg:h-[390px]" videoId="N_WZ5sVYpjk" opts={videoOpts} />
+        <YouTube className="mb-10" iframeClassName="w-[320px] h-[195px] sm:w-[448px] sm:h-[273px] lg:w-[640px] lg:h-[390px]" videoId="Pk5oMdivvNM" opts={videoOpts} />
+        <YouTube iframeClassName="w-[320px] h-[195px] sm:w-[448px] sm:h-[273px] lg:w-[640px] lg:h-[390px]" videoId="sweiEGVd3gU" opts={videoOpts} />
+      </div>
     </div>
   );
 };

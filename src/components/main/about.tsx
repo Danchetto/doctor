@@ -37,7 +37,9 @@ const About: React.FC = () => {
         </a>
       </div>
 
-      <div className="w-full p-6 bg-white max-w-[375px] rounded-2xl border-gray-300 shadow-card mt-10 lg:mt-16">
+      <div
+        className="lg:hidden w-full p-6 bg-white max-w-[375px] rounded-2xl border-gray-300 shadow-card mt-10 lg:mt-16"
+      >
         <div className="text-center font-medium">Онлайн запись</div>
         <div className="flex flex-wrap justify-center items-center mt-4 gap-2 lg:gap-4">
           <TelegramButton />
@@ -45,6 +47,12 @@ const About: React.FC = () => {
         </div>
       </div>
 
+      <div className="hidden lg:block">
+        <div className="flex mt-12 gap-4">
+          <TelegramButton applyText />
+          <WhatsappButton applyText />
+        </div>
+      </div>
     </div>
   );
 };

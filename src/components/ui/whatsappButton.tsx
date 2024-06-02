@@ -1,7 +1,8 @@
 import React from 'react';
 
-const WhatsappButton: React.FC = () => {
-  const url = 'https://wa.me/34624034206';
+const WhatsappButton: React.FC<{ applyText?: boolean }> = ({ applyText }) => {
+  // const url = 'https://wa.me/34624034206';
+  const url = 'https://wa.me/34641749828';
 
   return (
     <a href={url}>
@@ -34,7 +35,7 @@ const WhatsappButton: React.FC = () => {
             </g>
           </svg>
         </span>
-        <span className="tracking-wide font-medium">WhatsApp</span>
+        <span className="tracking-wide font-medium">{applyText ? 'Записаться в WhatsApp' : 'WhatsApp'}</span>
       </button>
     </a>
 

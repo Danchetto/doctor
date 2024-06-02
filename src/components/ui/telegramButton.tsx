@@ -1,7 +1,8 @@
 import React from 'react';
 
-const TelegramButton: React.FC = () => {
-  const url = 'https://t.me/drtuchinadmin';
+const TelegramButton: React.FC<{ applyText?: boolean }> = ({ applyText }) => {
+  // const url = 'https://t.me/drtuchinadmin';
+  const url = 'https://t.me/drpetrtuchin';
 
   return (
     <a href={url}>
@@ -20,7 +21,7 @@ const TelegramButton: React.FC = () => {
             />
           </svg>
         </span>
-        <span className="tracking-wide font-medium">Telegram</span>
+        <span className="tracking-wide font-medium">{applyText ? 'Записаться в Telegram' : 'Telegram'}</span>
       </button>
     </a>
 
