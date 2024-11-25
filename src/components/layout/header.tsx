@@ -18,8 +18,12 @@ const Header: React.FC = () => {
       link: '/doctors',
     },
     {
-      title: 'Для пациентов',
+      title: 'Онлайн консультация',
       link: '/patients',
+    },
+    {
+      title: 'Выезд на дом',
+      link: '/home-visit',
     },
   ];
 

@@ -19,8 +19,8 @@ const About: React.FC = () => {
         </div>
         <div className="w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] relative min-w-[100px]">
           <Image
-            className="relative drop-shadow-[0_0_0rem_#00000070] rounded-full scale-125"
-            src="/images/petr2.png"
+            className="relative scale-125 sm:scale-150"
+            src="/images/petr3.png"
             alt="Logo"
             fill
             priority

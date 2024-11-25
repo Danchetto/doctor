@@ -6,7 +6,6 @@ import {
 } from 'next/font/google';
 import '../globals.css';
 import React from 'react';
-import Script from 'next/script';
 import Head from 'next/head';
 
 const font = Montserrat({ subsets: ['latin', 'cyrillic'] });

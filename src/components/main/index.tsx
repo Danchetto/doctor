@@ -6,11 +6,13 @@ import Education from '@/components/main/education';
 import React from 'react';
 import FeatureCard from '@/components/main/featureCard';
 import YouTube from 'react-youtube';
+import Image from 'next/image';
 
 // @ts-ignore
 const Main: React.FC = () => {
   const doctorFeatures = ['Как стать врачом в Испании', 'Запись на консультацию'];
   const patientsFeatures = ['В каких случаях необходима онлайн консультация?', 'Что входит в онлайн консультацию?'];
+  const homeVisitFeatures = ['Полноценная консультация', 'Город Валенсия'];
 
   const videoOpts = {
     // height: '390',
@@ -36,13 +38,17 @@ const Main: React.FC = () => {
       </div>
 
       <div
-        className="relative w-full mt-[80px] lg:mt-[100px] flex flex-col lg:flex-row justify-center gap-10 sm:gap-32"
+        className="relative w-full mt-[80px] lg:mt-[100px] flex flex-col lg:flex-row lg:flex-wrap justify-center gap-10 sm:gap-32"
       >
-        <div className="h-auto lg:w-1/3">
-          <FeatureCard title="Для пациентов" features={patientsFeatures} src="/patients" />
+        <div className="h-auto lg:w-5/12">
+          <FeatureCard title="Онлайн консультация" features={patientsFeatures} src="/patients" />
         </div>
 
-        <div className="lg:w-1/3">
+        <div className="h-auto lg:w-5/12">
+          <FeatureCard title="Выезд на дом" features={homeVisitFeatures} src="/home-visit" />
+        </div>
+
+        <div className="lg:w-5/12">
           <FeatureCard title="Для врачей" features={doctorFeatures} src="/doctors" />
         </div>
       </div>
@@ -50,6 +56,11 @@ const Main: React.FC = () => {
       <div className="h-[50px] sm:h-[150px]" />
 
       <Education />
+
+      <div className="my-20">
+        <Image src="/images/diplom_1.png" alt="diploma1" width={0} height={0} sizes="100vh" className="object-contain w-full sm:w-4/5 mx-auto" />
+        <Image src="/images/diplom_2.png" alt="diploma2" width={0} height={0} sizes="100vh" className="object-contain w-full sm:w-4/5 mx-auto" />
+      </div>
 
       <div className="mt-10">
         <YouTube className="mb-10" iframeClassName="w-[320px] h-[195px] sm:w-[448px] sm:h-[273px] lg:w-[640px] lg:h-[390px]" videoId="N_WZ5sVYpjk" opts={videoOpts} />
