@@ -22,6 +22,8 @@ const config: Config = {
       },
       boxShadow: {
         card: '0 4px 14px #00000008',
+        card2: '0 14px 14px #00000008',
+        neon: '0 0 40px rgba(47, 128, 237, .24), 0 0 70px rgba(47, 128, 237, .14), 0 0 80px rgba(47, 128, 237, .14)',
       },
     },
   },

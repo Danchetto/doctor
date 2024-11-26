@@ -22,7 +22,7 @@ const Patients: React.FC = () => {
           <div className="text-2xl lg:text-4xl mb-5 lg:mb-8 font-medium">
             Онлайн-консультация
           </div>
-          <div>
+          <div className="bg-gray-50 p-5 rounded-2xl">
             <div className="font-medium">Может быть полезна в следующих случаях:</div>
             <ul className="list-disc mb-2 mt-2">
               <li className="ml-6">
@@ -36,7 +36,7 @@ const Patients: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="mt-5 lg:mt-10">
+          <div className="mt-5 lg:mt-10 bg-gray-50 p-5 rounded-2xl">
             <div className="font-medium">При каких симптомах необходима онлайн-консультация?</div>
             <ul className="list-disc mb-2 mt-2">
               <li className="ml-6">
@@ -63,7 +63,7 @@ const Patients: React.FC = () => {
             {/* <div className="font-medium">В консультацию входит:</div> */}
             <ul className="list-disc mb-2 mt-2">
               <li className="ml-6">
-                видео звонок с врачом через защищенную платформу для медицинских телеконсультаций;
+                видео звонок через защищенную платформу для медицинских телеконсультаций;
               </li>
               <li className="ml-6">сбор анамнеза, назначение лечения, рекомендации;</li>
               <li className="ml-6">оформление электронного рецепта / направления на анализы и исследования.</li>
@@ -76,17 +76,21 @@ const Patients: React.FC = () => {
               {' '}
               вашу проблему.
             </div>
+          </div>
+
+          <div className="">
             <div className="mb-3">
               Продолжительность -
               {' '}
               <b className="font-bold">30 минут</b>
             </div>
-            <div>
+            <div className="underline underline-offset-2">
               Стоимость -
               {' '}
               <span className="font-bold">€50</span>
             </div>
           </div>
+
         </div>
 
         {/* <div className="w-full lg:w-[1000px] mt-10 lg:mt-20"> */}

@@ -22,6 +22,10 @@ const Education: React.FC = () => {
 
   const workItems = [
     {
+      title: 'Врач скорой помощи Ambulancias COVASA, Valencia',
+      description: '2024',
+    },
+    {
       title: 'Врач отделения ургентной медицины Hospital Recoletas Zamora, España',
       description: '2024',
     },
