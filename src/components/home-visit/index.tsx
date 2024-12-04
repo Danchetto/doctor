@@ -47,10 +47,11 @@ const Patients: React.FC = () => {
           </div>
           <div>
             <div>Вам не нужно выходить из дома, особенно если чувствуете недомогание. Я приеду к вам и проведу полноценную консультацию, как в клинике.</div>
-            <div className="mt-3">
-              Стоимость:
-              <div className="font-bold">180€ (будние дни)</div>
-              <div className="font-bold">250€ (выходные и праздничные дни)</div>
+            <div className="mt-3 underline underline-offset-2">
+              Стоимость -
+              {' '}
+              <span className="font-bold">180€</span>
+              {/* <div className="font-bold">250€ (выходные и праздничные дни)</div> */}
             </div>
           </div>
         </div>
