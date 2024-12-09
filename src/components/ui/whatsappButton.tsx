@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhatsappButton: React.FC<{ applyText?: boolean }> = ({ applyText }) => {
   // const url = 'https://wa.me/34624034206';
-  const url = 'https://wa.me/34641749828';
+  const url = 'https://wa.me/34624034206';
 
   return (
     <a href={url}>
