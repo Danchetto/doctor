@@ -14,7 +14,7 @@ const About: React.FC = () => {
     <div className="w-full lg:max-w-[900px]">
       <div className="flex flex-row gap-2 lg:gap-32 items-center justify-between w-full">
         <div>
-          <h1 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-8">{t('name')}</h1>
+          <h1 className="text-3xl lg:text-6xl font-bold mb-4 lg:mb-16">{t('name')}</h1>
           <div className="mb-1 lg:text-xl">{t('main_number')}</div>
           <div className="lg:text-xl lg:max-w-[400px]">{t('main_description')}</div>
 
@@ -26,16 +26,26 @@ const About: React.FC = () => {
               <Image src="/images/instagram.png" alt="instagram" width={20} height={20} />
             </a>
           </div>
+
+          <div className="hidden lg:block">
+            <div className="flex mt-12 gap-4">
+              <TelegramButton applyText />
+              {/* <WhatsappButton applyText /> */}
+            </div>
+          </div>
         </div>
 
-        <Image
-          className="object-contain w-[180px] sm:w-[300px]"
-          src="/images/petr3.png"
-          alt="Logo"
-          width={0}
-          height={0}
-          sizes="100vh"
-        />
+        <div className="relative">
+          <div className="absolute inset-0 w-full h-full" />
+          <Image
+            className="object-contain w-[180px] sm:w-[300px]"
+            src="/images/petr.jpg"
+            alt="Logo"
+            width={0}
+            height={0}
+            sizes="100vh"
+          />
+        </div>
 
       </div>
 
@@ -45,14 +55,7 @@ const About: React.FC = () => {
         <div className="text-center font-medium">Онлайн запись</div>
         <div className="flex flex-wrap justify-center items-center mt-4 gap-2 lg:gap-4">
           <TelegramButton />
-          <WhatsappButton />
-        </div>
-      </div>
-
-      <div className="hidden lg:block">
-        <div className="flex mt-12 gap-4">
-          <TelegramButton applyText />
-          <WhatsappButton applyText />
+          {/* <WhatsappButton /> */}
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 
 const TelegramButton: React.FC<{ applyText?: boolean }> = ({ applyText }) => {
-  const url = 'https://t.me/drtuchinadmin';
-  // const url = 'https://t.me/drpetrtuchin';
+  // const url = 'https://t.me/drtuchinadmin';
+  const url = 'https://t.me/drpetrtuchin';
 
   return (
     <a href={url}>
