@@ -22,7 +22,7 @@ const Patients: React.FC = () => {
           <div className="text-2xl lg:text-4xl mb-5 lg:mb-8 font-medium">
             Онлайн-консультация
           </div>
-          <div className="bg-gray-50 p-5 rounded-2xl">
+          <div className="p-5 rounded-2xl">
             <div className="font-medium">Может быть полезна в следующих случаях:</div>
             <ul className="list-disc mb-2 mt-2">
               <li className="ml-6">
@@ -36,7 +36,7 @@ const Patients: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="mt-5 lg:mt-10 bg-gray-50 p-5 rounded-2xl">
+          <div className="mt-5 lg:mt-10 p-5 rounded-2xl">
             <div className="font-medium">При каких симптомах необходима онлайн-консультация?</div>
             <ul className="list-disc mb-2 mt-2">
               <li className="ml-6">
