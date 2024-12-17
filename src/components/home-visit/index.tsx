@@ -11,7 +11,7 @@ const Patients: React.FC = () => {
   // useScript({ html: '(function($_x,_s,id){var js,fjs=$_x.getElementsByTagName(_s)[0];if(!$_x.getElementById(id)){js = $_x.createElement(_s);js.id = id;js.src = "//platform.docplanner.com/js/widget.js";fjs.parentNode.insertBefore(js,fjs);}})(document,"script","zl-widget-s");' });
 
   return (
-    <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-8 sm:pt-16 overflow-hidden">
+    <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-0 sm:pt-16 overflow-hidden">
       <About />
 
       <div className="h-[1px] bg-gray-300 w-[60%] mt-10 lg:mt-16" />
