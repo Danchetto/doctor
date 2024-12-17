@@ -13,10 +13,10 @@ const About: React.FC = () => {
   return (
     <div className="w-full lg:max-w-[900px]">
       <div className="flex flex-row gap-2 lg:gap-32 items-center justify-between w-full">
-        <div>
+        <div className="w-1/2">
           <h1 className="text-3xl lg:text-6xl font-bold mb-4 lg:mb-16">{t('name')}</h1>
-          <div className="mb-1 lg:text-xl">{t('main_number')}</div>
-          <div className="lg:text-xl lg:max-w-[400px]">{t('main_description')}</div>
+          <div className="mb-1 lg:text-xl text-xs">{t('main_number')}</div>
+          <div className="lg:text-xl text-xs lg:max-w-[400px] pr-2">{t('main_description')}</div>
 
           <div className="flex gap-2 mt-2">
             <a href="https://t.me/drspain" target="_blank" rel="noreferrer">
@@ -35,10 +35,10 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative w-1/2">
           <div className="absolute inset-0 w-full h-full" />
           <Image
-            className="object-contain w-[180px] sm:w-[300px]"
+            className="object-contain w-full sm:w-[300px] float-right"
             src="/images/petr.jpg"
             alt="Logo"
             width={0}
