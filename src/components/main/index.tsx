@@ -24,7 +24,7 @@ const Main: React.FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center px-6 sm:px-24 pt-8 sm:pt-16">
+    <div className="flex min-h-screen flex-col items-center px-6 overflow-hidden sm:px-24 pt-8 sm:pt-16">
       <About />
 
       <div className="h-[1px] bg-gray-300 w-[100%] mt-10 lg:mt-20" />

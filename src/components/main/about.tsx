@@ -11,8 +11,8 @@ const About: React.FC = () => {
   const { isMobile } = useIsMobileScreen();
 
   return (
-    <div className="w-full lg:max-w-[900px]">
-      <div className="flex flex-row gap-2 lg:gap-32 items-center justify-between w-full">
+    <div className="w-full max-w-full lg:max-w-[900px]">
+      <div className="flex flex-row gap-2 lg:gap-32 items-center justify-between -mr-10 sm:-mr-10 overflow-hidden">
         <div className="w-1/2">
           <h1 className="text-3xl lg:text-6xl font-bold mb-4 lg:mb-16">{t('name')}</h1>
           <div className="mb-1 lg:text-xl text-xs">{t('main_number')}</div>
